@@ -1,0 +1,88 @@
+%!TEX program = pdflatex
+% Full chain: pdflatex -> bibtex -> pdflatex -> pdflatex
+\documentclass[11pt,en,authoryear]{elegantpaper}
+% used packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{pdflscape}
+\usepackage[affil-it]{authblk}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{cite}
+\usepackage{subcaption}
+\usepackage{graphicx}
+\usepackage{slashed}
+\usepackage{amsmath}
+\usepackage{amstext}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{ulem}
+\usepackage{CJKfntef}
+\usepackage{rotating} 
+\usepackage{float}
+\usepackage{CJK}
+%\DeclareCaptionLabelFormat{opening}{#2.}
+%\captionsetup[subfigure]{labelformat=opening,justification   = raggedright,
+%              singlelinecheck = false}
+
+% title info      
+\title{TITLE}
+% author info
+\author{xxx}
+\institute{NID}
+% extra info
+\version{1.0}
+\date{\today}
+
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+xxx
+\end{abstract}
+
+
+\section{Introduction}
+
+
+\section{Model}
+
+We use Epstein and O'halloran's model (the E-O model) to discuss the legislative process's susceptibility to larger discretion in China's specific "ministry legislative" environment. In E-O model, the legislature sets up a discretionary space for the executive branch to implementation. The executive branch usually has a extremely limited discretionary space set by the legislature. However, the M-O model is only applicable to some of those developed countries with higher rule of law, and is not applicable to most developing countries, and especially cannot explain China's discretionary power problem. In China, the legislature, for some reasons, cede its legislative powers to the executive branch who, for their own interests, leave themselves some discretionary space. At the same time, there is still a considerable number of economic rent as China's market economy system is not perfected, which further increase the discretionary  the executive branch in the legislative activities of the remaining Discretion. The executive branch legislating on behalf of the legislature is a new perspective on our model, and revisiting the design of discretionary power after the introduction of economic rent is an innovative aspect of our model.
+
+
+
+\section{Extended Model}
+
+
+
+
+
+\subsection{Custom Commands}
+Default \LaTeX{} commands and environments are all the same in this template\footnote{To ensure the codes are replicatable. We recommend users pay more attention to the contents other than formats. This is the meaning of the existence of the template.}. We created four new commands:
+\begin{enumerate}
+	\item \lstinline{\email}: create the hyperlink to email address.
+	\item \lstinline{\figref}: same usage as \lstinline{\ref}, but start with label text <\textbf{Figure n}>.
+	\item \lstinline{\tabref}: same usage as \lstinline{\ref}, but start with label text <\textbf{Table n}>.
+	\item \lstinline{\keywords}: create the keywords in the abstract section.
+\end{enumerate}
+
+
+\subsection{Bibliography}
+This template used \hologo{BibTeX} to generate the bibliography, the default bibliography style is  \lstinline{aer} under the option \lstinline{lang=en}. Citation example: ~\cite{en3} used data from a major peer-to-peer lending marketplace in China to study whether female and male investors evaluate loan performance differently. 
+
+If you want to use \hologo{BibTeX}, you must create a file named \lstinline{wpref.bib}, and add bib items (from Google Scholar, Mendeley, EndNote, and etc.) to \lstinline{wpref.bib} file, and cite the bibkey in the \lstinline{tex} file. Note that \hologo{BibTeX} has to be added.
+
+Three options for the references, \lstinline{cite=numbers} (default), \lstinline{cite=super} and \lstinline{cite=authoryear}. Those who major in science and engineering use \lstinline{numbers} and \lstinline{super} more often, while those who major in arts use \lstinline{authoryear} more frequently. To switch different options, use
+\begin{lstlisting}
+\documentclass[cite=super]{elegantpaper} % super style ref style
+\documentclass[super]{elegantpaper}
+
+\documentclass[cite=authoryear]{elegantpaper} % author-year ref style
+\documentclass[authoryear]{elegantpaper}
+\end{lstlisting}
+
+
+
+\end{document}
